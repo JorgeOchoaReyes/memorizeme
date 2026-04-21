@@ -462,7 +462,7 @@ export default function Home() {
                               i % 4 === 0 ? <br /> : null
                             }
                             <span key={i} className={`${color} mr-2 transition-colors`}>
-                              {word}
+                              {word.toLocaleLowerCase()}
                             </span>
                           </>
                         );
