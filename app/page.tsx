@@ -457,9 +457,14 @@ export default function Home() {
                           color = "text-blue-600 dark:text-blue-400 font-bold underline decoration-2 underline-offset-4";
                         }
                         return (
-                          <span key={i} className={`${color} mr-2 transition-colors`}>
-                            {word}
-                          </span>
+                          <>
+                            {
+                              i % 4 === 0 ? <br /> : null
+                            }
+                            <span key={i} className={`${color} mr-2 transition-colors`}>
+                              {word}
+                            </span>
+                          </>
                         );
                       })}
                     </div>
